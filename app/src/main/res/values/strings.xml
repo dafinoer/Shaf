@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name" translatable="false">Shaf</string>
+    <string name="kajian">Kajian</string>
+    <string name="title">Judul</string>
+    <string name="description">Deskripsi</string>
+</resources>
