@@ -44,3 +44,24 @@ fun ColorSchemeShafLight(): ColorSchemeShaf = ColorSchemeShaf(
     outlineVariant = Color(0xffBFC9C2)
 )
 
+fun ColorSchemeShafDark(): ColorSchemeShaf = ColorSchemeShaf(
+    primary = Color(0xff61DCB0),
+    onPrimary = Color(0xff003828),
+    primaryContainer = Color(0xff00513C),
+    onPrimaryContainer = Color(0xff7FF9CB),
+    secondary = Color(0xffB3CCBF),
+    onSecondary = Color(0xff1E352C),
+    secondaryContainer = Color(0xff354B41),
+    onSecondaryContainer = Color(0xffCEE9DB),
+    tertiary = Color(0xffA6CCE0),
+    onTertiary = Color(0xff0A3545),
+    tertiaryContainer = Color(0xff264B5C),
+    onTertiaryContainer = Color(0xffC2E8FD),
+    surface = Color(0xff111412),
+    onSurface = Color(0xffC5C7C4),
+    surfaceVariant = Color(0xff404944),
+    onSurfaceVariant = Color(0xffBFC9C2),
+    outline = Color(0xff89938D),
+    outlineVariant = Color(0xff404944),
+)
+
