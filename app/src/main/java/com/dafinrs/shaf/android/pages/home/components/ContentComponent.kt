@@ -18,7 +18,7 @@ fun ContentComponent(modifier: Modifier = Modifier) {
     Box(
         modifier = modifier
             .fillMaxWidth()
-            .fillMaxHeight(0.7f)
+            .fillMaxHeight(0.75f)
             .clip(RoundedCornerShape(topStart = 40.dp, topEnd = 40.dp))
             .background(MaterialTheme.colorScheme.surface),
         contentAlignment = Alignment.BottomCenter

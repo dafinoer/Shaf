@@ -31,7 +31,9 @@ import com.dafinrs.shaf.android.ui.theme.fontFamily
 import java.time.ZonedDateTime
 
 @Composable
-fun HeaderDashboardComponent() {
+fun HeaderDashboardComponent(onTapSearch: () -> Unit, onTapLocation: () -> Unit) {
+    val yearTimeNow = ZonedDateTime.now().year
+
     Box(
         modifier = Modifier
             .height(285.dp)
@@ -39,72 +41,62 @@ fun HeaderDashboardComponent() {
             .background(Brush.verticalGradient(GradientCompose.current))
     ) {
         Column(modifier = Modifier.fillMaxSize()) {
-            AppBarMenu {
-
+            Row(
+                modifier = Modifier
+                    .height(64.dp)
+                    .fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Box(modifier = Modifier.weight(1f))
+                IconButton(onClick = onTapSearch) {
+                    Icon(
+                        imageVector = Icons.Default.Search,
+                        contentDescription = "Location",
+                        Modifier.size(24.dp),
+                        tint = MaterialTheme.colorScheme.onSurface
+                    )
+                }
+                IconButton(onClick = onTapLocation) {
+                    Icon(
+                        imageVector = Icons.Default.LocationOn,
+                        contentDescription = "Location",
+                        Modifier.size(24.dp),
+                        tint = MaterialTheme.colorScheme.onSurface
+                    )
+                }
             }
-            TitleBackground()
-        }
-    }
-}
-
-@Composable
-private fun AppBarMenu(location: () -> Unit) {
-    Row(
-        modifier = Modifier
-            .height(64.dp)
-            .fillMaxWidth(),
-        verticalAlignment = Alignment.CenterVertically
-    ) {
-        Box(modifier = Modifier.weight(1f))
-        IconButton(onClick = location) {
-            Icon(
-                imageVector = Icons.Default.Search,
-                contentDescription = "Location",
-                Modifier.size(24.dp),
-                tint = MaterialTheme.colorScheme.onSurface
-            )
-        }
-        IconButton(onClick = location) {
-            Icon(
-                imageVector = Icons.Default.LocationOn,
-                contentDescription = "Location",
-                Modifier.size(24.dp),
-                tint = MaterialTheme.colorScheme.onSurface
-            )
-        }
-    }
-}
-
-@Composable
-private fun TitleBackground() {
-    val yearTimeNow = ZonedDateTime.now().year
-
-    Row(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(horizontal = 16.dp)
-    ) {
-        Column(modifier = Modifier.weight(0.5f)) {
-            Text(
-                text = stringResource(id = R.string.kajian),
-                fontFamily = fontFamily,
-                style = TextStyle(fontSize = 36.sp, fontWeight = FontWeight(400), color = MaterialTheme.colorScheme.onSurface)
-            )
-            Text(
-                text = "$yearTimeNow",
-                fontFamily = fontFamily,
-                style = TextStyle(fontSize = 36.sp),
-                fontWeight = FontWeight(400),
-                color = MaterialTheme.colorScheme.onSurface
-            )
-            Text(
-                modifier = Modifier.padding(top = 4.dp),
-                text = "di Tangerang, Banten",
-                fontFamily = fontFamily,
-                style = TextStyle(fontSize = 12.sp),
-                fontWeight = FontWeight(400),
-                color = MaterialTheme.colorScheme.onSurface
-            )
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp)
+            ) {
+                Column(modifier = Modifier.weight(0.5f)) {
+                    Text(
+                        text = stringResource(id = R.string.kajian),
+                        fontFamily = fontFamily,
+                        style = TextStyle(
+                            fontSize = 36.sp,
+                            fontWeight = FontWeight(400),
+                            color = MaterialTheme.colorScheme.onSurface
+                        )
+                    )
+                    Text(
+                        text = "$yearTimeNow",
+                        fontFamily = fontFamily,
+                        style = TextStyle(fontSize = 36.sp),
+                        fontWeight = FontWeight(400),
+                        color = MaterialTheme.colorScheme.onSurface
+                    )
+                    Text(
+                        modifier = Modifier.padding(top = 4.dp),
+                        text = "di Tangerang, Banten",
+                        fontFamily = fontFamily,
+                        style = TextStyle(fontSize = 12.sp),
+                        fontWeight = FontWeight(400),
+                        color = MaterialTheme.colorScheme.onSurface
+                    )
+                }
+            }
         }
     }
 }

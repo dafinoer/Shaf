@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name" translatable="false">Shaf</string>
     <string name="kajian">Kajian</string>
-    <string name="title">Judul</string>
-    <string name="description">Deskripsi</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="set_location">Setting Location</string>
+    <string name="change_location">Change Location</string>
 </resources>
