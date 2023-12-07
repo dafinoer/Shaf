@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="kajian">Kajian</string>
-    <string name="title">Title</string>
-    <string name="description">Description</string>
+    <string name="title">Judul</string>
+    <string name="description">Deskripsi</string>
+    <string name="set_location">Atur Lokasi</string>
+    <string name="change_location">Ganti Lokasi</string>
 </resources>
