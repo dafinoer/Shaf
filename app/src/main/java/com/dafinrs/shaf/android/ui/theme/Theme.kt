@@ -17,6 +17,7 @@ private val DarkColorScheme = darkColorScheme(
     tertiary = ColorSchemeShaf.dark.tertiary,
     surface = ColorSchemeShaf.dark.surface,
     onSurface = ColorSchemeShaf.dark.onSurface,
+    surfaceVariant = ColorSchemeShaf.dark.surfaceVariant
 )
 
 private val LightColorScheme = lightColorScheme(
@@ -27,6 +28,7 @@ private val LightColorScheme = lightColorScheme(
     tertiary = ColorSchemeShaf.light.tertiary,
     surface = ColorSchemeShaf.light.surface,
     onSurface = ColorSchemeShaf.light.onSurface,
+    surfaceVariant = ColorSchemeShaf.light.surfaceVariant
 )
 
 @Composable
