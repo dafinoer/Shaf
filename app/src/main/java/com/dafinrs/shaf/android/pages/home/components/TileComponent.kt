@@ -37,10 +37,10 @@ import com.dafinrs.shaf.android.ui.theme.fontFamily
 
 
 @Composable
-fun TileComponent(fromTime: String, toTime: String) {
+fun TileComponent(fromTime: String, toTime: String, onTapAction: () -> Unit) {
     Box(modifier = Modifier
         .fillMaxWidth()
-        .clickable { }) {
+        .clickable { onTapAction() }) {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Top
@@ -186,7 +186,9 @@ private fun TileComponentPreview() {
         Box(modifier = Modifier.fillMaxSize()) {
             TileComponent(
                 fromTime = "12:00", toTime = "13:00"
-            )
+            ) {
+
+            }
         }
     }
 }
