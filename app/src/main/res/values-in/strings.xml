@@ -5,4 +5,16 @@
     <string name="description">Deskripsi</string>
     <string name="set_location">Atur Lokasi</string>
     <string name="change_location">Ganti Lokasi</string>
+    <string name="back_navigation">Kembali</string>
+    <string name="share">Bagikan</string>
+    <string name="schedule">Jadwal</string>
+    <string name="date">Tanggal</string>
+    <string name="location">Lokasi</string>
+    <string name="category">Kategori</string>
+    <string name="read_more">Baca Selanjutnya</string>
+    <string name="speaker">Pemateri</string>
+    <string name="speaker_profile">Profile Pemateri</string>
+    <string name="unknow_speaker">Tidak Ada Nama</string>
+    <string name="target_audience">Target Kalangan</string>
+    <string name="unknow_detail">Tidak ada Keterangan</string>
 </resources>
