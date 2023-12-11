@@ -29,7 +29,7 @@ fun HomePage(navController: NavController) {
             modifier = Modifier.fillMaxSize(),
             contentAlignment = Alignment.BottomCenter,
         ) {
-            ContentComponent()
+            ContentComponent(navController = navController)
         }
     }
 }

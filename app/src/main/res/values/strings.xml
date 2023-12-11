@@ -5,4 +5,16 @@
     <string name="description">Description</string>
     <string name="set_location">Setting Location</string>
     <string name="change_location">Change Location</string>
+    <string name="back_navigation">Back</string>
+    <string name="share">Share</string>
+    <string name="schedule">Schedule</string>
+    <string name="date">Date</string>
+    <string name="location">Location</string>
+    <string name="category">Category</string>
+    <string name="read_more">Read More</string>
+    <string name="speaker">Speaker</string>
+    <string name="speaker_profile">Speaker Profile</string>
+    <string name="unknow_speaker">Unknow Speaker Name</string>
+    <string name="target_audience">Target Audience</string>
+    <string name="unknow_detail">Unknow Detail</string>
 </resources>
