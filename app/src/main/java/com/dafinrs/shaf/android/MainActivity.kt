@@ -56,7 +56,7 @@ class MainActivity : ComponentActivity() {
                             DashboardScreenPage(rememberNavController)
                         }
                         composable("detail/{id}") {
-                            DetailScreenPage()
+                            DetailScreenPage(rememberNavController)
                         }
                         composable("setLocation") {
                             SetLocationScreenPage(rememberNavController)
