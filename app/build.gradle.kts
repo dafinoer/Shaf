@@ -49,6 +49,19 @@ android {
     }
 }
 
+fun DependencyHandlerScope.firebase() {
+    implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
+    implementation("com.google.firebase:firebase-database")
+}
+
+fun DependencyHandlerScope.koin() {
+    val koinAndroidVersion = "3.5.0"
+    val koinNamePackage = "io.insert-koin"
+    implementation("$koinNamePackage:koin-android:$koinAndroidVersion")
+    implementation("$koinNamePackage:koin-compose:1.1.0")
+    implementation("$koinNamePackage:koin-androidx-compose:3.5.2")
+}
+
 dependencies {
 
     implementation("androidx.core:core-ktx:1.12.0")
@@ -69,4 +82,6 @@ dependencies {
 
     implementation("androidx.navigation:navigation-compose:2.7.5")
     implementation("io.coil-kt:coil-compose:2.5.0")
+    firebase()
+    koin()
 }
